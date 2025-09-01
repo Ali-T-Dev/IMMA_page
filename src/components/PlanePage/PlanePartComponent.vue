@@ -19,7 +19,7 @@
 
 <script setup>
 import PlanePartItemComponent from './PlanePartItemComponent.vue';
-import IcongoldCheckPlane from './Icons/iconGoldCheckPlane.vue';
+import IcongoldCheckPlane from './Icons/IconGoldCheckPlane.vue';
 import IconGreenCheckPlane from './Icons/IconGreenCheckPlane.vue';
 import IconCrossPlane from './Icons/IconCrossPlane.vue';
 const plans = [

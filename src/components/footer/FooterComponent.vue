@@ -5,6 +5,9 @@
         <RouterLink to="/" class="nav-link">Dashboard</RouterLink>
       </li>
       <li>
+        <RouterLink to="/Analysis" class="nav-link">Analysis</RouterLink>
+      </li>
+      <li>
         <RouterLink to="/Map" class="nav-link">Map</RouterLink>
       </li>
       <li>
