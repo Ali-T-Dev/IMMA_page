@@ -2,7 +2,6 @@
   <section class="card-bg mobile-box px-2 py-2 shadow-lg bg-[#f9fafb]">
     <Form @submit="onSubmit" class="space-y-4 max-w-md mx-auto p-6">
 
-      <!-- Profile Picture -->
       <div class="flex flex-col items-center">
         <label class="cursor-pointer">
           <div class="w-24 h-24 relative overflow-visible bg-gray-200 border-2 border-blue-600 rounded-full flex items-center justify-center mb-2">
@@ -20,28 +19,24 @@
         <ErrorMessage name="profile" class="text-red-500 text-xs"/>
       </div>
 
-      <!-- Full Name -->
       <div>
         <label class="block text-gray-700 text-sm font-medium mb-1">Full Name</label>
         <Field name="fullName" type="text" placeholder="Enter your full name" class="bg-white w-full border border-gray-300 rounded px-3 py-2 text-base"/>
         <ErrorMessage name="fullName" class="text-red-500 text-xs"/>
       </div>
 
-      <!-- Email -->
       <div>
         <label class="block text-gray-700 text-sm font-medium mb-1">Email Address</label>
         <Field name="email" type="email" placeholder="Enter your email" class="bg-white w-full border border-gray-300 rounded px-3 py-2 text-base"/>
         <ErrorMessage name="email" class="text-red-500 text-xs"/>
       </div>
 
-      <!-- Phone Number -->
       <div>
         <label class="block text-gray-700 text-sm font-medium mb-1">Phone Number</label>
         <Field name="phone" type="text" placeholder="Enter your Phone Number" class="bg-white w-full border border-gray-300 rounded px-3 py-2 text-base"/>
         <ErrorMessage name="phone" class="text-red-500 text-xs"/>
       </div>
 
-      <!-- Password -->
       <div class="relative">
         <label class="block text-gray-700 text-sm font-medium mb-1">Password</label>
         <input
@@ -71,13 +66,11 @@
         </p>
       </div>
 
-      <!-- Submit Button -->
       <button type="submit" class="text-lg font-normal flex items-center justify-center my-4 w-full py-3 rounded-lg text-white bg-gradient-to-r from-blue-500 to-green-700">
         Create Account
         <IconArrowLogin/>
       </button>
 
-      <!-- Social Buttons -->
       <div class="flex items-center my-4 text-gray-500 text-sm">
         <span class="flex-grow border-t border-gray-500"></span>
         <span class="mx-2 text-sm">or continue with</span>
@@ -88,12 +81,10 @@
         <button type="button" class="w-full border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 transition">Apple</button>
       </div>
 
-      <!-- Sign in link -->
       <p class="text-center text-gray-500 text-sm mt-4">
         Already have an account? <a href="#" class="text-blue-600 hover:underline">Sign In</a>
       </p>
 
-      <!-- Terms -->
       <p class="text-center text-gray-400 text-xs mt-2">
         By signing up, you agree to our <a href="#" class="underline">Terms of Service</a> and <a href="#" class="underline">Privacy Policy</a>.
       </p>
@@ -110,14 +101,11 @@ import IconPersonLogin from './Icons/IconPersonLogin.vue';
 import IconCameraLogin from './Icons/IconCameraLogin.vue';
 import IconArrowLogin from './Icons/IconArrowLogin.vue';
 
-// Preview image
 const profilePreview = ref(null);
 
-// Password toggle
 const pin = ref('');
 const showNumbers = ref(false);
 
-// تعریف schema با yup
 const schema = yup.object({
   profile: yup.mixed().required('Profile picture is required'),
   fullName: yup.string().required('Full name is required'),
@@ -130,7 +118,6 @@ const schema = yup.object({
     .matches(/\d/, 'Password must contain at least one number')
 });
 
-// راه‌اندازی useForm با schema
 const { handleSubmit, setFieldValue } = useForm({
   validationSchema: schema,
   initialValues: {
@@ -142,12 +129,10 @@ const { handleSubmit, setFieldValue } = useForm({
   }
 });
 
-// سینک پسورد با vee-validate
 watch(pin, (newVal) => {
   setFieldValue('password', newVal);
 });
 
-// مدیریت آپلود تصویر
 const onFileChange = (e) => {
   const file = e.target.files[0];
   if (file) {
@@ -160,14 +145,12 @@ const onFileChange = (e) => {
   }
 };
 
-// نمایش/عدم نمایش پسورد
 const toggleNumbers = (event) => {
   event.preventDefault();
   event.stopPropagation();
   showNumbers.value = !showNumbers.value;
 };
 
-// ارسال فرم
 const onSubmit = handleSubmit((formValues) => {
   console.log('Form submitted:', formValues);
 });
