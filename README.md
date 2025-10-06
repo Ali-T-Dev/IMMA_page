@@ -33,9 +33,9 @@ Built as a personal front-end project to demonstrate UI/UX design skills and mod
 
 ## 💻 Tech Stack  
 
-- **Framework**: React + Vite  
+- **Framework**: vue + Vite  
 - **Styling**: TailwindCSS  
-- **Routing**: React Router (if used)  
+- **Routing**: vue Router (if used)  
 - **Animations**: Framer Motion  
 - **Build Tool**: Vite  
 - **Deployment**: GitHub Pages / Vercel  
