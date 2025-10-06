@@ -8,15 +8,12 @@ Built as a personal front-end project to demonstrate UI/UX design skills and mod
 ## 📸 Screenshots  
 
 <p align="left">
-  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma1.png?raw=true" alt="IMMA UI 1" width="23%" align="top"/>
-  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma2.png?raw=true" alt="IMMA UI 2" width="23%" align="top"/>
-  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma3.png?raw=true" alt="IMMA UI 3" width="23%" align="top"/>
-  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma4.png?raw=true" alt="IMMA UI 4" width="23%" align="top"/>
-</p>
-
-<p align="left">
-  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma5.png?raw=true" alt="IMMA UI 5" width="23%" align="top"/>
-  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma6.png?raw=true" alt="IMMA UI 6" width="23%" align="top"/>
+  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma4.png?raw=true" alt="IMMA UI 4" width="31%" align="top"/>
+  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma5.png?raw=true" alt="IMMA UI 5" width="31%" align="top"/>
+  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma6.png?raw=true" alt="IMMA UI 6" width="31%" align="top"/>
+  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma1.png?raw=true" alt="IMMA UI 1" width="31%" align="top"/>
+  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma2.png?raw=true" alt="IMMA UI 2" width="31%" align="top"/>
+  <img src="https://github.com/Ali-T-Dev/IMMA_page/blob/main/imma3.png?raw=true" alt="IMMA UI 3" width="31%" align="top"/>
 </p>
 
 ---
